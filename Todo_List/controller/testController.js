@@ -1,5 +1,5 @@
 const testingController = (req,res) => {
-    res.status(200).send("<h1>Welcom to TODO app</h1>")
+    res.status(200).send("<h1>Welcome to TODO app</h1>")
 };
 
 
