@@ -3,9 +3,13 @@ const morgan = require('morgan');
 const dotenv = require('dotenv');
 const colors = require('colors');
 const cors = require('cors');
+const connectDB = require('./config/db');
 
 //env config
 dotenv.config(); // since it is already in the root folder no need to set the path for this otherwise we do "dotenv.config({the path of the .env file});"
+
+//DB connection
+connectDB();
 
 // rest object
 const app = express(); // all express workings are put into app variable.
